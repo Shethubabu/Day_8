@@ -4,7 +4,7 @@ import { useProducts } from "../../services/productApi"
 export default function FeaturedHero() {
   const { data, isLoading } = useProducts()
   if (isLoading) return null
-  const featured = data.slice(0, 4) // first 4 products
+  const featured = data.slice(0, 4) 
 
   return (
     <section className="max-w-7xl mx-auto mb-10 p-6 bg-blue-50 rounded-lg flex flex-col md:flex-row items-center justify-between gap-6">

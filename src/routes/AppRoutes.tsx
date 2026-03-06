@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Layout from "../components/layout/Layout"
 
-import Home from "../pages/Home"
+
 import PLP from "../pages/PLP"
 import PDP from "../pages/PDP"
 import Cart from "../pages/Cart"
@@ -32,7 +32,7 @@ export default function AppRoutes() {
 
           <Route path="/wishlist" element={<Wishlist />} />
 
-          {/* Protected Route */}
+          
           <Route
             path="/orders"
             element={user ? <Orders /> : <Navigate to="/login" replace />}

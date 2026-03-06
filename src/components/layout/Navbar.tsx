@@ -12,14 +12,14 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md px-6 py-4 flex items-center justify-between sticky top-0 z-50">
-      {/* Logo */}
+      
       <Link to="/" className="flex items-center gap-2">
         <h1 className="text-3xl font-bold text-blue-600 tracking-tight">
           SmartShop
         </h1>
       </Link>
 
-      {/* Search */}
+   
       <div className="flex-1 mx-6">
         <input
           type="text"
@@ -28,9 +28,9 @@ export default function Navbar() {
         />
       </div>
 
-      {/* Icons & Auth */}
+      
       <div className="flex items-center gap-5">
-        {/* Wishlist */}
+        
         <Link to="/wishlist" className="relative hover:text-pink-500 transition-colors">
           <Heart size={22} />
           {wishlistItems.length > 0 && (
@@ -40,7 +40,7 @@ export default function Navbar() {
           )}
         </Link>
 
-        {/* Cart */}
+        
         <Link to="/cart" className="relative hover:text-blue-600 transition-colors">
           <ShoppingCart size={22} />
           {cartItems.length > 0 && (
@@ -50,12 +50,12 @@ export default function Navbar() {
           )}
         </Link>
 
-        {/* Orders */}
+       
         <Link to="/orders" className="hover:text-gray-700 transition-colors">
           <Package size={22} />
         </Link>
 
-        {/* Auth Buttons */}
+       
         {user ? (
           <div className="flex items-center gap-3">
             <span className="font-semibold">{user.name}</span>

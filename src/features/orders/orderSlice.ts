@@ -14,7 +14,7 @@ interface OrdersState {
 }
 
 const initialState: OrdersState = {
-  items: [] // initially empty
+  items: [] 
 }
 
 const ordersSlice = createSlice({

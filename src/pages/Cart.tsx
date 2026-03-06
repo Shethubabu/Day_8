@@ -35,7 +35,7 @@ export default function Cart() {
             </div>
           ))}
 
-          {/* Total */}
+         
           <div className="text-right mt-6 text-xl font-bold text-gray-800">
             Total: ${total.toFixed(2)}
           </div>
